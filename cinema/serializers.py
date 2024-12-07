@@ -11,7 +11,7 @@ from cinema.models import (
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = "__all__"
+        fields = ['id', 'title', 'description', 'duration']
         read_only_fields = ["id"]
 
 
